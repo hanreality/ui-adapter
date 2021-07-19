@@ -39,7 +39,7 @@ public class UIAdapter {
         }
         final float targetDensity = appDisplayMetrics.widthPixels / uiConfig.designWidth;
         final float targetScaleDensity = targetDensity * (sNonCompatScaleDensity / sNonCompatDensity);
-        final int targetDensityDpi = (int) (uiConfig.designWidth * targetDensity);
+        final int targetDensityDpi = (int) (160 * targetDensity);
 
         appDisplayMetrics.density = targetDensity;
         appDisplayMetrics.scaledDensity = targetScaleDensity;
